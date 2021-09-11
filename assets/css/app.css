@@ -1,0 +1,144 @@
+body {
+    font-family: "UTMAVO", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    background-color: var(--main-bg-color);
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    height: var(--header-height);
+    position: relative;
+}
+
+.app-container {
+    background: var(--black-color-1);
+    height: 100vh;
+    position: relative;
+}
+
+.menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    background-color: var(--black-color-2);
+}
+
+.main-menu {
+    align-items: center;
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    color: var(--text-color);
+}
+
+.main-menu .logo {
+    width: calc(var(--header-height) - 2px);
+    padding: 0 4px;
+}
+
+.main-menu>li {
+    line-height: 1.4;
+}
+
+.main-menu .menu-item {
+    width: 142px;
+    padding: 21.5px 0;
+    transition: all 0.5s ease 0s;
+}
+
+.main-menu .menu-item:hover {
+    background: var(--black-color-1);
+    color: var(--primary-color);
+}
+
+.hero {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-container .slide .title {
+    font-size: 300px;
+    line-height: 345px;
+    text-align: center;
+    font-family: 'gangOfThree', sans-serif;
+    -webkit-text-fill-color: transparent;
+    color: var(--primary-color);
+    font-style: normal;
+    -webkit-text-stroke-width: 4px;
+    font-weight: normal;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-container .slide .info {
+    font-size: 40px;
+    color: var(--text-color);
+    text-align: center;
+    letter-spacing: 34px;
+    display: inline-block;
+    margin-left: 36px;
+    font-weight: 700;
+    position: absolute;
+    top: 88%;
+    left: 0;
+    right: 0;
+}
+
+.footer-item {
+    display: flex;
+    font-size: 40px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    padding-top: 3%;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    color: var(--text-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-item>*~* {
+    margin-left: 50px;
+}
+
+.footer-item>li>a {
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-item>li>a:hover {
+    color: var(--primary-color);
+}

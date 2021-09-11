@@ -1,0 +1,24 @@
+@font-face {
+    font-family: gangOfThree;
+    src: url(../font/gang_of_three/go3v2.ttf);
+}
+
+@font-face {
+    font-family: UTMAVO;
+    src: url(../font/utm-avo-cufonfonts/utm-avo.ttf);
+}
+
+:root {
+    --text-color: #D6D8D3;
+    --black-color-1: #262429;
+    --black-color-2: #2F2C33;
+    --primary-color: #FE5047;
+    --header-height: 70px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
