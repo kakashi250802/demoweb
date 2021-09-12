@@ -396,3 +396,97 @@ header {
     display: flex;
     justify-content: center;
 }
+
+.to-right {
+    transform: translateX(-300px);
+}
+
+.to-left {
+    transform: translateX(300px);
+}
+
+.to-left,
+.to-right,
+.to-top {
+    opacity: 0;
+    transition: all 1.5s ease 0s;
+}
+
+.to-right.show,
+.to-left.show {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+}
+
+.to-top {
+    transform: translateY(100px);
+}
+
+.to-top.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.trans-dl-2 {
+    transition-delay: 0.2s;
+}
+
+.trans-dl-4 {
+    transition-delay: 0.4s;
+}
+
+.trans-dl-6 {
+    transition-delay: 0.6s;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    padding-top: 100px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    height: 90%;
+    max-width: 700px;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
