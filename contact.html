@@ -39,16 +39,18 @@
                 <div class="warning-alert">
                     <p>Vui lòng điền thông tin vào form bên dưới để chúng tôi có thể liên hệ làm việc với bạn</p>
                 </div>
-                <div class="contact-form">
+                <form class="contact-form">
                     <div class="form-el">
                         <h4 class="title">Name *</h4>
-                        <div class="name-el">
-                            <input type="text" name="First name" required>
-                            <p>First name</p>
-                        </div>
-                        <div class="name-el">
-                            <input type="text" name="Last name" required>
-                            <p>Last name</p>
+                        <div class="name-desc">
+                            <div class="name-el">
+                                <input type="text" name="First name" required>
+                                <p>First name</p>
+                            </div>
+                            <div class="name-el">
+                                <input type="text" name="Last name" required>
+                                <p>Last name</p>
+                            </div>
                         </div>
                     </div>
                     <div class="form-el">
@@ -57,12 +59,14 @@
                     </div>
                     <div class="form-el">
                         <h4 class="title">Message *</h4>
-                        <input type="text" name="Message" required>
-                        <input type="text" name="ENTER SECURITY TEXT" required>
+                        <textarea name="message" id="" rows="1"></textarea>
+                        <input type="text" name="SECURITYTEXT" placeholder="ENTER SECURITY TEXT" required>
+                    </div>
+                    <div class="form-el">
+                        <input type="submit" value="Đồng ý">
                     </div>
 
-
-                </div>
+                </form>
             </div>
         </div>
         <!-- footer -->

@@ -274,8 +274,7 @@ header {
     font-weight: 700;
     color: var(--text-color);
     line-height: 44px;
-    opacity: 0.5;
-    background: var(--primary-color);
+    background: rgba(var(--bg-pr-color), 0.5);
 }
 
 .work .Category .info h3 {
@@ -288,4 +287,112 @@ header {
     max-width: 1500px;
     margin: 0 auto;
     justify-content: space-between;
+    padding: 142px;
+}
+
+.contact .content {
+    max-width: 725px;
+}
+
+.contact .content .warning-alert {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    color: var(--text-color);
+    height: 58px;
+    letter-spacing: 0.7px;
+}
+
+.name-el input {
+    max-width: 100%;
+    width: 350px;
+    height: 65px;
+    padding: 0 4px;
+}
+
+.form-el .name-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-el .title {
+    padding-top: 36px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: var(--text-color);
+    padding-bottom: 25px;
+}
+
+.name-el p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--text-color);
+    padding-left: 22px;
+}
+
+.form-el input,
+.name-el input,
+.form-el textarea {
+    background: transparent;
+    border: 4px solid #D6D8D3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    appearance: none;
+    font-style: normal;
+    line-height: 29px;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.form-el input[type=Email] {
+    width: 100%;
+    max-width: 725px;
+    height: 65px;
+    padding: 0 4px;
+}
+
+.form-el textarea {
+    height: 150px;
+    width: 100%;
+    max-width: 725px;
+    padding: 0 4px;
+}
+
+.form-el textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.form-el input[name="SECURITYTEXT"] {
+    margin-top: 25px;
+    width: 100%;
+    max-width: 350px;
+    height: 65px;
+    padding: 22px 38px;
+}
+
+.form-el input[type=submit] {
+    margin-top: 50px;
+    max-width: 172px;
+    width: 100%;
+    height: 65px;
+    border: none;
+    background: var(--primary-color);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.form-el:last-child {
+    display: flex;
+    justify-content: center;
 }
