@@ -40,6 +40,7 @@ header {
     left: 0;
     right: 0;
     text-align: center;
+    z-index: 100;
     display: flex;
     background-color: var(--black-color-2);
 }
@@ -236,4 +237,55 @@ header {
 .main-product .img:hover img {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+.work {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.work .Category .img img {
+    height: 450px;
+    width: 800px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.work .Category .img:hover img {
+    transform: scale(1.2);
+}
+
+.work .Category {
+    position: relative;
+}
+
+.work .Category .img {
+    overflow: hidden;
+}
+
+.work .Category .info {
+    font-style: normal;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 30px 22px;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 44px;
+    opacity: 0.5;
+    background: var(--primary-color);
+}
+
+.work .Category .info h3 {
+    opacity: 1;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
